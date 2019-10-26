@@ -1,7 +1,10 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# CarDGee Overlay
 
 EAPI=6
+
+KEYWORDS="~amd64"
 
 K_PREPATCHED="yes"
 UNIPATCH_STRICTORDER="yes"
@@ -35,5 +38,10 @@ pkg_setup(){
 	ewarn "Git zen-sources are extremely unsupported, even from the upstream"
 	ewarn "developers. Use them at your own risk and don't bite us if your"
 	ewarn "system explodes"
+	echo 
+	elog "This is a cardgee overlay ebuild"
+	elog "A collection of ebuilds for my own personal use not available on portage tree."
+	elog "There is no support whatsoever, but if you find a bug, please file an issue."
+	echo
 	kernel-2_pkg_setup
 }
