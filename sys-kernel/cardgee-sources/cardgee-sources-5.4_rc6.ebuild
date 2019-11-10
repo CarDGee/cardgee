@@ -13,10 +13,10 @@ detect_version
 
 DESCRIPTION="cardgee-sources is a fork of the linux kernel with some extra features including MuQSS futex and CEL optimizations"
 
-SRC_URI="https://github.com/CarDGee/linux/archive/5.4_rc6-cardgee.tar.gz"
+SRC_URI="https://github.com/CarDGee/linux/archive/5.4.rc6-cardgee.tar.gz"
 
 src_unpack() {
-	tar -xf ${DISTDIR}/5.4_rc6-cardgee.tar.gz
+	tar -xf ${DISTDIR}/5.4.rc6-cardgee.tar.gz
 }
 
 
