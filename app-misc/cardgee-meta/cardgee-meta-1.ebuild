@@ -36,11 +36,14 @@ RDEPEND="
 	mail-client/evolution
 	media-fonts/ubuntu-font-family
 	media-gfx/eog
+	media-gfx/gimp
 	media-sound/rhythmbox
 	media-video/totem
 	net-firewall/ufw
 	net-irc/polari
 	net-misc/bridge-utils
+	net-p2p/deluge
+	sys-apps/bleachbit
 	sys-apps/mlocate
 	sys-apps/usbutils
 	sys-block/gparted
@@ -52,7 +55,6 @@ RDEPEND="
 	sys-kernel/genkernel-next
 	sys-kernel/linux-firmware
 	sys-libs/libselinux
-	www-misc/profile-sync-daemon
 	x11-apps/mesa-progs
 "
 
