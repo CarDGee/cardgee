@@ -15,6 +15,7 @@ IUSE=""
 RDEPEND="
 	app-admin/sudo
 	app-arch/file-roller
+	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
 	app-crypt/seahorse
@@ -26,6 +27,7 @@ RDEPEND="
 	dev-libs/libappindicator
 	gnome-base/gnome-core-libs
 	gnome-base/gnome-control-center
+	gnome-base/gnome-menus
 	gnome-base/gnome-shell
 	gnome-base/gnome-shell-common
 	gnome-base/gnome-session
@@ -51,6 +53,7 @@ RDEPEND="
 	sys-kernel/linux-firmware
 	x11-apps/mesa-progs
 	x11-terms/gnome-terminal
+	x11-themes/gnome-backgrounds
 	x11-wm/mutter
 "
 
