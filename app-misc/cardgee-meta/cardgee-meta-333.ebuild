@@ -24,12 +24,11 @@ RDEPEND="
 	app-editors/nano
 	app-laptop/laptop-mode-tools
 	app-misc/screenfetch
+	app-portage/eix
+	app-portage/gentoolkit
 	dev-libs/libappindicator
-	gnome-base/gnome-core-libs
 	gnome-base/gnome-control-center
-	gnome-base/gnome-menus
 	gnome-base/gnome-shell
-	gnome-base/gnome-shell-common
 	gnome-base/gnome-session
 	gnome-base/gvfs
 	gnome-base/nautilus
@@ -41,7 +40,10 @@ RDEPEND="
 	media-fonts/ubuntu-font-family
 	media-gfx/eog
 	media-gfx/gimp
+	media-sound/rhythmbox
+	media-video/totem
 	net-firewall/ufw
+	net-irc/polari
 	net-misc/bridge-utils
 	sys-apps/mlocate
 	sys-apps/usbutils
@@ -53,7 +55,6 @@ RDEPEND="
 	sys-kernel/linux-firmware
 	x11-apps/mesa-progs
 	x11-terms/gnome-terminal
-	x11-themes/gnome-backgrounds
 	x11-wm/mutter
 "
 
