@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # CarDGee Overlay
 
@@ -13,19 +13,9 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-admin/sudo
 	app-arch/file-roller
-	app-arch/lz4
-	app-arch/lzip
-	app-arch/unrar
 	app-crypt/seahorse
-	app-crypt/veracrypt
 	app-editors/gedit
-	app-editors/nano
-	app-laptop/laptop-mode-tools
-	app-misc/screenfetch
-	app-portage/eix
-	app-portage/gentoolkit
 	dev-libs/libappindicator
 	gnome-base/gnome-control-center
 	gnome-base/gnome-shell
@@ -42,18 +32,8 @@ RDEPEND="
 	media-gfx/gimp
 	media-sound/rhythmbox
 	media-video/totem
-	net-firewall/ufw
 	net-irc/polari
-	net-misc/bridge-utils
-	sys-apps/mlocate
-	sys-apps/usbutils
 	sys-block/gparted
-	sys-boot/grub
-	sys-boot/os-prober
-	sys-fs/dislocker
-	sys-kernel/genkernel-next
-	sys-kernel/linux-firmware
-	x11-apps/mesa-progs
 	x11-terms/gnome-terminal
 	x11-wm/mutter
 "
