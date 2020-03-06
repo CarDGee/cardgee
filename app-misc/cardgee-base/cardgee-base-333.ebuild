@@ -17,7 +17,6 @@ RDEPEND="
 	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
-	app-crypt/veracrypt
 	app-editors/nano
 	app-misc/screenfetch
 	app-portage/eix
@@ -30,7 +29,6 @@ RDEPEND="
 	sys-fs/dislocker
 	sys-kernel/genkernel-next
 	sys-kernel/linux-firmware
-	x11-apps/mesa-progs
 "
 
 pkg_postinst() {
