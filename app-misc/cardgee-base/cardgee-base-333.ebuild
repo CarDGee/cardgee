@@ -13,7 +13,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-admin/doas
 	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
