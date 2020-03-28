@@ -4,7 +4,7 @@
 
 EAPI=6
 
-DESCRIPTION="Meta package providing my selection of applications for my linux desktop"
+DESCRIPTION="Meta package providing qtile wm along with my selection of applications"
 HOMEPAGE="https://github.com/CarDGee/cardgee"
 
 LICENSE="metapackage"
@@ -13,21 +13,19 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-arch/lz4
-	app-arch/lzip
-	app-arch/unrar
-	app-editors/vim
-	app-misc/screenfetch
-	app-portage/eix
-	app-portage/gentoolkit
-	net-firewall/ufw
-	net-misc/bridge-utils
-	sys-apps/mlocate
-	sys-apps/usbutils
-	sys-boot/grub
-	sys-fs/dislocker
-	sys-kernel/genkernel-next
-	sys-kernel/linux-firmware
+	app-misc/cardgee-base
+	dev-lang/rust-bin
+	lxde-base/lxappearance
+	media-fonts/fontawesome
+	media-fonts/noto
+	media-fonts/noto-emoji
+	media-fonts/ubuntu-font-family
+	media-gfx/feh
+	x11-apps/setxkbmap
+	x11-misc/dmenu
+	x11-misc/numlockx
+	x11-terms/alacritty
+	x11-wm/qtile
 "
 
 pkg_postinst() {
@@ -36,7 +34,8 @@ pkg_postinst() {
 	elog "A collection of ebuilds for my own personal use not available on portage tree."
 	elog "There is no support whatsoever, but if you find a bug, please file an issue."
 	elog
-	elog "You have installed a personal meta package"
+	elog "You have installed a personal qtile meta package"
 	elog "It may include applications which you don't need or like"
 	elog
 }
+
