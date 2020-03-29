@@ -1,5 +1,4 @@
 # Copyright 1999-2020 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
 # CarDGee Overlay
 
 EAPI=6
@@ -16,10 +15,12 @@ RDEPEND="
 	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
+	app-backup/mkstage4
 	app-editors/vim
 	app-misc/screenfetch
 	app-portage/eix
 	app-portage/gentoolkit
+	dev-vcs/git
 	net-firewall/ufw
 	net-misc/bridge-utils
 	sys-apps/mlocate
