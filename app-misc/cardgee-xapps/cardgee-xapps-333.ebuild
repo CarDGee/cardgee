@@ -13,7 +13,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-arch/xarchiver
 	app-crypt/veracrypt
 	dev-util/geany
 	app-emulation/virt-manager
