@@ -22,6 +22,7 @@ RDEPEND="
 	media-fonts/ubuntu-font-family
 	media-gfx/feh
 	x11-apps/setxkbmap
+	x11-base/xorg-server
 	x11-misc/dmenu
 	x11-misc/numlockx
 	x11-terms/alacritty

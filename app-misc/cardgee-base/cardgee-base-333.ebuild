@@ -16,6 +16,7 @@ RDEPEND="
 	app-arch/lzip
 	app-arch/unrar
 	app-backup/mkstage4
+	app-crypt/p11-kit
 	app-editors/vim
 	app-misc/screenfetch
 	app-portage/eix
@@ -23,6 +24,7 @@ RDEPEND="
 	dev-vcs/git
 	net-firewall/ufw
 	net-misc/bridge-utils
+	net-misc/networkmanager
 	sys-apps/mlocate
 	sys-apps/usbutils
 	sys-boot/grub

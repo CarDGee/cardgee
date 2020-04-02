@@ -20,6 +20,7 @@ RDEPEND="
 	app-misc/cmatrix
 	mail-client/thunderbird-bin
 	sys-apps/udevil
+	sys-process/glances
 	www-client/firefox-bin
 	x11-misc/spacefm
 "
