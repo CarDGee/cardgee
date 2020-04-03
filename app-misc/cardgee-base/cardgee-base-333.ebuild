@@ -25,6 +25,7 @@ RDEPEND="
 	net-firewall/ufw
 	net-misc/bridge-utils
 	net-misc/networkmanager
+	net-wireless/iw
 	sys-apps/mlocate
 	sys-apps/usbutils
 	sys-boot/grub

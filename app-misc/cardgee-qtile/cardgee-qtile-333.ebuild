@@ -15,12 +15,14 @@ IUSE=""
 RDEPEND="
 	app-misc/cardgee-base
 	dev-lang/rust-bin
+	dev-python/python-dateutil
 	lxde-base/lxappearance
 	media-fonts/fontawesome
 	media-fonts/noto
 	media-fonts/noto-emoji
 	media-fonts/ubuntu-font-family
 	media-gfx/feh
+	media-sound/mpd
 	x11-apps/setxkbmap
 	x11-base/xorg-server
 	x11-misc/dmenu
