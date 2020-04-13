@@ -15,6 +15,7 @@ RDEPEND="
 	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
+	app-arch/zstd
 	app-backup/mkstage4
 	app-crypt/p11-kit
 	app-editors/vim
