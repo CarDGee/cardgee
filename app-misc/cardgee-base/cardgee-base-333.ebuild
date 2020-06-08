@@ -31,7 +31,10 @@ RDEPEND="
 	sys-apps/usbutils
 	sys-boot/grub
 	sys-fs/dislocker
-	sys-kernel/genkernel-next
+	sys-fs/dosfstools
+	sys-fs/ntfs3g
+	sys-kernel/dracut
+	sys-kernel/genkernel
 	sys-kernel/linux-firmware
 "
 

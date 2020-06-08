@@ -19,9 +19,11 @@ RDEPEND="
 	app-misc/cardgee-base
 	app-misc/cmatrix
 	mail-client/thunderbird-bin
+	media-video/mpv
 	sys-apps/udevil
 	sys-process/glances
 	www-client/firefox-bin
+	x11-apps/mesa-progs
 	x11-misc/spacefm
 "
 
