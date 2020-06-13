@@ -33,8 +33,7 @@ RDEPEND="
 	sys-fs/dislocker
 	sys-fs/dosfstools
 	sys-fs/ntfs3g
-	sys-kernel/dracut
-	sys-kernel/genkernel
+	sys-kernel/genkernel-next
 	sys-kernel/linux-firmware
 "
 
