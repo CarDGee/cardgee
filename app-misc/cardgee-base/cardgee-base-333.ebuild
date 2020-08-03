@@ -12,21 +12,16 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-arch/lz4
 	app-arch/lzip
 	app-arch/unrar
-	app-arch/zstd
-	app-backup/mkstage4
 	app-crypt/p11-kit
 	app-editors/vim
-	app-misc/screenfetch
 	app-portage/eix
 	app-portage/gentoolkit
 	dev-vcs/git
 	net-firewall/ufw
 	net-misc/bridge-utils
 	net-misc/networkmanager
-	net-wireless/iw
 	sys-apps/mlocate
 	sys-apps/usbutils
 	sys-boot/grub

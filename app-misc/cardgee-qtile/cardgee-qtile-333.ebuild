@@ -14,15 +14,21 @@ IUSE=""
 
 RDEPEND="
 	app-misc/cardgee-base
+	app-misc/khal
 	dev-lang/rust-bin
+	dev-python/iwlib
+	dev-python/keyring
+	dev-python/psutil
 	dev-python/python-dateutil
+	dev-python/python-mpd
+	dev-python/setproctitle
+	dev-python/pyxdg
 	lxde-base/lxappearance
 	media-fonts/fontawesome
 	media-fonts/noto
 	media-fonts/noto-emoji
 	media-fonts/ubuntu-font-family
 	media-gfx/feh
-	media-sound/mpd
 	x11-apps/setxkbmap
 	x11-base/xorg-server
 	x11-misc/dmenu
