@@ -28,7 +28,7 @@ RDEPEND="
 	sys-fs/dislocker
 	sys-fs/dosfstools
 	sys-fs/ntfs3g
-	sys-kernel/genkernel-next
+	sys-kernel/genkernel
 	sys-kernel/linux-firmware
 "
 
