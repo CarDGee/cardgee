@@ -19,9 +19,10 @@ SRC_URI="mirror://sourceforge/lxde/${P}.tar.xz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~alpha amd64 arm ~arm64 ~mips ppc x86 ~amd64-linux ~x86-linux"
-IUSE="dbus"
+IUSE="dbus +gtk3"
 
-RDEPEND="x11-libs/gtk+:3
+RDEPEND="gtk3? ( x11-libs/gtk+:3 )
+		!gtk3? ( x11-libs/gtk+:2 )
 	dbus? ( dev-libs/dbus-glib )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
