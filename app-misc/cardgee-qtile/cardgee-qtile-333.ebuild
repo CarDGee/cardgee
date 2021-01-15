@@ -22,7 +22,6 @@ RDEPEND="
 	dev-python/python-mpd
 	dev-python/setproctitle
 	dev-python/pyxdg
-	lxde-base/lxappearance
 	media-fonts/fontawesome
 	media-fonts/noto
 	media-fonts/noto-emoji
