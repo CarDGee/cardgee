@@ -13,13 +13,20 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
+	app-editors/vim
 	app-emulation/virt-manager
 	app-misc/cardgee-base
+	app-misc/neofetch
+	app-shells/starship
+	dev-lang/mono
+	media-sound/shntool
 	media-video/mpv
-	sys-apps/udevil
-	sys-process/glances
+	net-misc/youtube-dl
+	net-p2p/deluge
+	sys-apps/flatpak
+	sys-fs/mtpfs
+	sys-fs/udisks
 	x11-apps/mesa-progs
-	x11-misc/spacefm
 "
 
 pkg_postinst() {

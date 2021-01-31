@@ -12,10 +12,11 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
+	app-admin/sudo
 	app-arch/lzip
 	app-arch/unrar
 	app-crypt/p11-kit
-	app-editors/vim
+	app-eselect/eselect-repository
 	app-portage/eix
 	app-portage/gentoolkit
 	dev-vcs/git

@@ -25,7 +25,9 @@ RDEPEND="
 	media-fonts/fontawesome
 	media-fonts/noto
 	media-fonts/noto-emoji
+	media-fonts/siji
 	media-fonts/ubuntu-font-family
+	media-fonts/unifont
 	media-gfx/feh
 	x11-apps/setxkbmap
 	x11-base/xorg-server
