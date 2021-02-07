@@ -15,7 +15,6 @@ IUSE=""
 RDEPEND="
 	app-misc/cardgee-base
 	app-misc/khal
-	dev-lang/rust-bin
 	dev-python/keyring
 	dev-python/psutil
 	dev-python/python-dateutil

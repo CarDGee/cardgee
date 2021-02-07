@@ -12,7 +12,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	app-admin/sudo
 	app-arch/lzip
 	app-arch/unrar
 	app-crypt/p11-kit
@@ -26,6 +25,7 @@ RDEPEND="
 	sys-apps/mlocate
 	sys-apps/usbutils
 	sys-boot/grub
+	sys-devel/bc
 	sys-fs/dislocker
 	sys-fs/dosfstools
 	sys-fs/ntfs3g
