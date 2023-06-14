@@ -1,36 +1,38 @@
-# Copyright 1999-2020 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Foundation
+
 # CarDGee Overlay
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Meta package providing my selection of applications for my linux desktop"
 HOMEPAGE="https://github.com/CarDGee/cardgee"
 
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
+	app-admin/doas
 	app-arch/lzip
 	app-arch/unrar
-	app-crypt/p11-kit
-	app-eselect/eselect-repository
 	app-portage/eix
 	app-portage/gentoolkit
 	dev-vcs/git
-	net-firewall/ufw
-	net-misc/bridge-utils
-	net-misc/networkmanager
-	sys-apps/mlocate
+	sys-apps/plocate
 	sys-apps/usbutils
-	sys-boot/grub
 	sys-devel/bc
+	sys-devel/mold
 	sys-fs/dislocker
 	sys-fs/dosfstools
+	sys-fs/exfatprogs
+	sys-fs/f2fs-tools
 	sys-fs/ntfs3g
+	sys-fs/xfsprogs
 	sys-kernel/genkernel
 	sys-kernel/linux-firmware
+	sys-kernel/modprobed-db
+	sys-process/schedtool
 "
 
 pkg_postinst() {
