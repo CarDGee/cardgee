@@ -13,7 +13,6 @@ KEYWORDS="amd64"
 IUSE="dxvk"
 
 RDEPEND="
-	app-emulation/dxvk
 	app-emulation/vkd3d
   dxvk? ( app-emulation/dxvk )
 	games-util/esteam
