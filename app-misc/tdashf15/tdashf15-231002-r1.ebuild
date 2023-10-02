@@ -15,7 +15,6 @@ IUSE=""
 RDEPEND="
 	sys-firmware/intel-microcode
 	sys-power/asusctl
-	x11-libs/libva-intel-media-driver
 "
 
 pkg_postinst() {
