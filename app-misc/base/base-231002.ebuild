@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Foundation
 
 # CarDGee Overlay
 
@@ -18,7 +18,9 @@ RDEPEND="
 	app-arch/unrar
 	app-portage/eix
 	app-portage/gentoolkit
+	app-shells/ohmyzsh
 	dev-vcs/git
+	net-firewall/ufw
 	sys-apps/plocate
 	sys-apps/usbutils
 	sys-devel/bc
