@@ -28,9 +28,11 @@ RDEPEND="
 	gnome-extra/gnome-calculator
 	gnome-extra/gnome-tweaks
 	mail-client/evolution
+	media-fonts/nerd-fonts
 	media-video/mpv
 	net-wireless/gnome-bluetooth
 	sys-apps/gnome-disk-utility
+	www-apps/webapp-manager
 	x11-terms/gnome-terminal
 "
 
