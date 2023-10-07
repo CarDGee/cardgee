@@ -4,7 +4,7 @@
 
 EAPI=8
 
-DESCRIPTION="Meta package providing my selection of applications for audio production"
+DESCRIPTION="Meta package providing my selection of applications for music production"
 HOMEPAGE="https://github.com/CarDGee/cardgee"
 
 LICENSE="metapackage"
