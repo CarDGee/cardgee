@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Foundation
+# Copyright 2023 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # CarDGee Overlay
 
@@ -13,6 +13,8 @@ KEYWORDS="amd64"
 IUSE=""
 
 RDEPEND="
+	app-crypt/sbctl
+	media-libs/libva-intel-media-driver
 	sys-firmware/intel-microcode
 	sys-power/asusctl
 "
