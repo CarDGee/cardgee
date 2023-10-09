@@ -16,6 +16,7 @@ RDEPEND="
 	app-admin/doas
 	app-arch/lzip
 	app-arch/unrar
+	app-misc/c-lolcat
 	app-portage/eix
 	app-portage/gentoolkit
 	app-shells/ohmyzsh
@@ -24,6 +25,7 @@ RDEPEND="
 	sys-apps/plocate
 	sys-apps/usbutils
 	sys-devel/bc
+	sys-devel/lld
 	sys-devel/mold
 	sys-fs/dislocker
 	sys-fs/dosfstools
@@ -34,6 +36,7 @@ RDEPEND="
 	sys-kernel/genkernel
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
+	sys-libs/llvm-libunwind
 	sys-process/schedtool
 "
 
