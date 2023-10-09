@@ -16,6 +16,7 @@ RDEPEND="
 	app-arch/file-roller
 	app-editors/gedit
 	app-emulation/virt-manager
+	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
 	app-text/evince
 	dev-python/nautilus-python
