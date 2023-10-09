@@ -15,14 +15,16 @@ IUSE="dxvk"
 RDEPEND="
 	app-emulation/vkd3d
   dxvk? ( app-emulation/dxvk )
+  	dev-util/vulkan-tools
 	games-util/esteam
 	games-util/gamemode
 	games-util/lutris
 	games-util/mangohud
 	games-util/steam-meta
 	games-util/steamtinkerlaunch
+	gui-wm/gamescope
 	media-libs/glew
-  media-libs/vkBasalt
+	media-libs/vkBasalt
 "
 
 pkg_postinst() {
