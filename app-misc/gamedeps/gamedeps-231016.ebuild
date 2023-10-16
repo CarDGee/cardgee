@@ -20,6 +20,7 @@ RDEPEND="
 	games-util/gamemode
 	games-util/lutris
 	games-util/mangohud
+	games-util/ProtonUp-Qt
 	games-util/steam-meta
 	games-util/steamtinkerlaunch
 	gui-wm/gamescope
