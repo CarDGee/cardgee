@@ -15,9 +15,6 @@ IUSE=""
 RDEPEND="
 	app-arch/file-roller
 	app-editors/gedit
-	app-emulation/virt-manager
-	app-misc/appimagelauncher-bin
-	app-misc/github-desktop-bin
 	app-text/evince
 	dev-python/nautilus-python
 	gnome-base/gnome-control-center
@@ -32,10 +29,8 @@ RDEPEND="
 	media-fonts/nerd-fonts
 	media-gfx/gimp
 	media-gfx/shotwell
-	media-video/mpv
 	net-wireless/gnome-bluetooth
 	sys-apps/gnome-disk-utility
-	www-apps/webapp-manager
 	x11-terms/gnome-terminal
 "
 
