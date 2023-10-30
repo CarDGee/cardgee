@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # CarDGee Overlay
@@ -7,15 +7,20 @@ EAPI=8
 
 WX_GTK_VER="3.2-gtk3"
 
-inherit cmake wxwidgets xdg
+inherit cmake git-r3 wxwidgets xdg
 
 DESCRIPTION="Free crossplatform audio editor"
 HOMEPAGE="https://tenacityaudio.org/"
 
 MY_PV="${PV/_p/-}"
 MY_PV="${MY_PV/_/-}"
-SRC_URI="https://codeberg.org/tenacityteam/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${PN}"
+# use git tag until source tarball without submodule issue is sorted out
+# https://codeberg.org/tenacityteam/tenacity/issues/315
+EGIT_REPO_URI="https://codeberg.org/tenacityteam/tenacity.git"
+EGIT_SUBMODULES=( lib-src/libnyquist )
+EGIT_COMMIT="v${MY_PV}"
+#SRC_URI="https://codeberg.org/tenacityteam/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+#S="${WORKDIR}/${PN}"
 
 # GPL-2: Tenacity code
 # CC-BY-3.0: Tenacity Documentation
@@ -71,7 +76,6 @@ DOCS=( LICENSE.txt README.md )
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-cursors-header.patch
-	"${FILESDIR}"/${PN}-install-nyquist.patch
 )
 
 src_configure() {
@@ -99,6 +103,7 @@ src_configure() {
 
 	cmake_src_configure
 }
+
 
 pkg_postinst() {
 	elog
