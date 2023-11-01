@@ -10,15 +10,21 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="ardour audacity carla easyeffects hydrogen lmms mixxx tenacity"
+
+REQUIRED_USE="
+  audacity? ( !tenacity )
+"
 
 RDEPEND="
-	media-sound/ardour
-	media-sound/carla
-	media-sound/easyeffects
-	media-sound/hydrogen
-	media-sound/mixxx
-	media-sound/tenacity	
+  ardour? ( media-sound/ardour )
+  audacity? ( media-sound/audacity ) 
+  carla? ( media-sound/carla )
+  easyeffects? ( media-sound/easyeffects )  
+  hydrogen? ( media-sound/hydrogen )
+  lmms? ( media-sound/lmms )
+  mixxx? ( media-sound/mixxx )
+  tenacity? ( media-sound/tenacity )	
 "
 
 pkg_postinst() {
