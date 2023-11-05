@@ -27,7 +27,6 @@ RDEPEND="
 	gnome-extra/gnome-tweaks
 	mail-client/evolution
 	media-fonts/nerd-fonts
-	media-gfx/gimp
 	media-gfx/shotwell
 	net-wireless/gnome-bluetooth
 	sys-apps/gnome-disk-utility

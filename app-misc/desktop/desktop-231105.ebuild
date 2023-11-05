@@ -18,7 +18,6 @@ RDEPEND="
 	app-misc/github-desktop-bin
 	media-sound/nuclear-bin
 	media-video/mpv
-	media-video/obs-studio
 	net-im/signal-desktop-bin
 	net-misc/yt-dlp
 	net-p2p/qbittorrent
