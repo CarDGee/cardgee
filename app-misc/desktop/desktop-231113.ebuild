@@ -10,12 +10,27 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="gnome"
 
 RDEPEND="
 	app-emulation/virt-manager
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
+	
+  gnome? ( app-arch/file-roller
+  	app-editors/gedit
+  	dev-python/nautilus-python
+  	gnome-base/gnome-light
+  	gnome-extra/gnome-browser-connector
+  	gnome-extra/gnome-calculator
+  	gnome-extra/gnome-tweaks
+  	gnome-extra/gnome-weather
+  	mail-client/evolution
+  	media-gfx/shotwell
+  	sys-apps/gnome-disk-utility
+  	)
+  	
+  	media-fonts/nerd-fonts
 	media-sound/nuclear-bin
 	media-video/mpv
 	net-im/signal-desktop-bin
