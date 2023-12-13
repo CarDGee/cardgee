@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Foundation
+# Copyright 2023 Gentoo Foundation
 
 # CarDGee Overlay
 
@@ -10,16 +10,14 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="gnome"
+IUSE="gnome nautilus nemo"
 
 RDEPEND="
 	app-emulation/virt-manager
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
 	
-  gnome? ( app-arch/file-roller
-  	app-editors/gedit
-  	dev-python/nautilus-python
+  gnome? ( app-editors/gedit
   	gnome-base/gnome-light
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
@@ -28,6 +26,13 @@ RDEPEND="
   	mail-client/evolution
   	media-gfx/shotwell
   	sys-apps/gnome-disk-utility
+  	)
+  	
+  nautilus? ( app-arch/file-roller
+  	dev-python/nautilus-python
+  	)
+  	
+  nemo? ( gnome-extra/nemo-fileroller 
   	)
   	
   	media-fonts/nerd-fonts
