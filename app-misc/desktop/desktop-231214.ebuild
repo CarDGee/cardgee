@@ -16,11 +16,14 @@ RDEPEND="
 	app-emulation/virt-manager
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
+	dev-util/android-tools
 	
   gnome? ( app-editors/gedit
   	gnome-base/gnome-light
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
+  	gnome-base/dconf-editor
+  	gnome-extra/gdm-settings
   	gnome-extra/gnome-tweaks
   	gnome-extra/gnome-weather
   	mail-client/evolution
@@ -36,7 +39,6 @@ RDEPEND="
   	)
   	
   	media-fonts/nerd-fonts
-	media-sound/nuclear-bin
 	media-video/mpv
 	net-im/signal-desktop-bin
 	net-misc/yt-dlp
