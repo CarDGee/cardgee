@@ -10,13 +10,14 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="gnome nautilus nemo"
+IUSE="epiphany gnome nautilus nemo"
 
 RDEPEND="
 	app-emulation/virt-manager
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
 	dev-util/android-tools
+  epiphany? ( www-client/epiphany )
 	
   gnome? ( app-editors/gedit
   	gnome-base/gnome-light
