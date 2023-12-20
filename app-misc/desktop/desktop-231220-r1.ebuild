@@ -34,12 +34,12 @@ RDEPEND="
   	gnome-base/dconf-editor
   	gnome-extra/gdm-settings
   	gnome-extra/gnome-firmware
-  	gnome-extra/gnome-maps
   	gnome-extra/gnome-tweaks
   	gnome-extra/gnome-weather
   	mail-client/evolution
   	media-fonts/cantarell
   	media-gfx/shotwell
+  	sci-geosciences/gnome-maps
   	sys-apps/gnome-disk-utility
   	x11-wm/mutter
   	x11-terms/gnome-terminal
