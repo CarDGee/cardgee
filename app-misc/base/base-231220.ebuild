@@ -36,7 +36,6 @@ RDEPEND="
 	sys-kernel/genkernel
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
-	sys-libs/llvm-libunwind
 	sys-process/schedtool
 "
 

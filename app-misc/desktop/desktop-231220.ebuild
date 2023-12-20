@@ -13,6 +13,7 @@ KEYWORDS="amd64"
 IUSE="epiphany gnome nautilus nemo"
 
 RDEPEND="
+	app-admin/keepassxc
 	app-emulation/virt-manager
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
@@ -20,16 +21,28 @@ RDEPEND="
   epiphany? ( www-client/epiphany )
 	
   gnome? ( app-editors/gedit
-  	gnome-base/gnome-light
+  	dev-libs/gjs
+  	gnome-base/gnome-core-libs
+  	gnome-base/gnome-session
+  	gnome-base/gnome-settings-daemon
+  	gnome-base/gnome-control-center
+  	gnome-base/gnome-shell
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
+  	gnome-extra/gnome-calendar
+  	gnome-extra/gnome-contacts
   	gnome-base/dconf-editor
   	gnome-extra/gdm-settings
+  	gnome-extra/gnome-firmware
+  	gnome-extra/gnome-maps
   	gnome-extra/gnome-tweaks
   	gnome-extra/gnome-weather
   	mail-client/evolution
+  	media-fonts/cantarell
   	media-gfx/shotwell
   	sys-apps/gnome-disk-utility
+  	x11-wm/mutter
+  	x11-terms/gnome-terminal
   	)
   	
   nautilus? ( app-arch/file-roller
