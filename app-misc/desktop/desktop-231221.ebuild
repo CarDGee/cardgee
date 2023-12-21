@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="epiphany gnome nautilus nemo"
+IUSE="contacts epiphany gnome maps nautilus nemo weather"
 
 RDEPEND="
 	app-admin/keepassxc
@@ -18,6 +18,7 @@ RDEPEND="
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
 	dev-util/android-tools
+  contacts? ( gnome-extra/gnome-contacts )
   epiphany? ( www-client/epiphany )
 	
   gnome? ( app-editors/gedit
@@ -35,15 +36,15 @@ RDEPEND="
   	gnome-extra/gdm-settings
   	gnome-extra/gnome-firmware
   	gnome-extra/gnome-tweaks
-  	gnome-extra/gnome-weather
   	mail-client/evolution
   	media-fonts/cantarell
   	media-gfx/shotwell
-  	sci-geosciences/gnome-maps
   	sys-apps/gnome-disk-utility
   	x11-wm/mutter
   	x11-terms/gnome-terminal
   	)
+  	
+  maps? ( sci-geosciences/gnome-maps )
   	
   nautilus? ( app-arch/file-roller
   	dev-python/nautilus-python
@@ -58,6 +59,7 @@ RDEPEND="
 	net-misc/yt-dlp
 	net-p2p/qbittorrent
 	www-apps/webapp-manager
+  weather? ( gnome-extra/gnome-weather )
 "
 
 pkg_postinst() {
