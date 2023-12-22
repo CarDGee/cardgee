@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="contacts epiphany gnome maps nautilus nemo weather"
+IUSE="calendar contacts epiphany gnome maps nautilus nemo weather"
 
 RDEPEND="
 	app-admin/keepassxc
@@ -18,10 +18,14 @@ RDEPEND="
 	app-misc/appimagelauncher-bin
 	app-misc/github-desktop-bin
 	dev-util/android-tools
+	
+  calendar? ( gnome-extra/gnome-calendar )
+  
   contacts? ( gnome-extra/gnome-contacts )
+  
   epiphany? ( www-client/epiphany )
 	
-  gnome? ( app-editors/gedit
+  gnome? ( app-editors/gedit 
   	dev-libs/gjs
   	gnome-base/gnome-core-libs
   	gnome-base/gnome-session
@@ -30,12 +34,11 @@ RDEPEND="
   	gnome-base/gnome-shell
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
-  	gnome-extra/gnome-calendar
-  	gnome-extra/gnome-contacts
   	gnome-base/dconf-editor
   	gnome-extra/gdm-settings
   	gnome-extra/gnome-firmware
   	gnome-extra/gnome-tweaks
+  	gnome-extra/polkit-gnome
   	mail-client/evolution
   	media-fonts/cantarell
   	media-gfx/shotwell
