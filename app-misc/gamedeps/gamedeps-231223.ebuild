@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dxvk"
+IUSE="dxvk wine"
 
 RDEPEND="
 	app-emulation/vkd3d
@@ -25,6 +25,7 @@ RDEPEND="
 	gui-wm/gamescope
 	media-libs/glew
 	media-libs/vkBasalt
+  wine? ( app-emulation/wine-staging )
 "
 
 pkg_postinst() {
