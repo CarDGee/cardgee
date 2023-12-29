@@ -10,12 +10,13 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dxvk wine"
+IUSE="dxvk epic wine"
 
 RDEPEND="
 	app-emulation/vkd3d
   dxvk? ( app-emulation/dxvk )
   	dev-util/vulkan-tools
+  epic? ( games-util/heroic-bin )
 	games-util/esteam
 	games-util/gamemode
 	games-util/lutris
