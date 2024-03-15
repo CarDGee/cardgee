@@ -80,7 +80,7 @@ RDEPEND="
 
   qbittorrent? ( net-p2p/qbittorrent )
 
-  signal ( net-im/signal-desktop-bin )
+  signal? ( net-im/signal-desktop-bin )
 
   sweeper? ( kde-apps/sweeper )
 	
