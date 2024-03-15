@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Foundation
+# Copyright 2023 Gentoo Foundation
 
 # CarDGee Overlay
 
@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="android"
 
 RDEPEND="
 	app-admin/doas
@@ -21,6 +21,7 @@ RDEPEND="
 	app-portage/gentoolkit
 	app-shells/ohmyzsh
 	dev-vcs/git
+android? ( dev-util/android-tools )
 	net-firewall/ufw
 	sys-apps/plocate
 	sys-apps/usbutils

@@ -10,20 +10,17 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="calendar contacts games graphics epiphany gnome maps music nautilus nemo video weather"
+IUSE="appimage calendar contacts games graphics epiphany gnome k3b kde keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
 
 RDEPEND="
-	app-admin/keepassxc
-	app-emulation/virt-manager
-	app-misc/appimagelauncher-bin
-	app-misc/base
-	app-misc/github-desktop-bin
-	dev-util/android-tools
+  appimage? ( app-misc/appimagelauncher-bin )
+
+  app-misc/base
 	
   calendar? ( gnome-extra/gnome-calendar )
   
   contacts? ( gnome-extra/gnome-contacts )
-  
+
   epiphany? ( www-client/epiphany )
   
   games? ( app-misc/gamedeps )
@@ -51,8 +48,24 @@ RDEPEND="
   	)
   	
   graphics? ( app-production/graphics )
+
+  k3b? ( kde-apps/k3b )
+
+  kde? ( kde-plasma/plasma-meta
+	kde-apps/ark
+	kde-apps/dolphin
+	kde-apps/kcalc
+	kde-apps/konsole
+	kde-apps/kwrite
+	)
+
+  keepassxc? ( app-admin/keepassxc )
+
+  ktorrent? ( net-p2p/ktorrent )
   	
   maps? ( sci-geosciences/gnome-maps )
+
+  mpv? ( media-video/mpv )
   
   music? ( app-production/music )
   	
@@ -61,15 +74,21 @@ RDEPEND="
   	
   nemo? ( gnome-extra/nemo-fileroller )
   	
-  	media-fonts/nerd-fonts
-	media-video/mpv
-	net-im/signal-desktop-bin
+  nerd? ( media-fonts/nerd-fonts )
+
 	net-misc/yt-dlp
-	net-p2p/qbittorrent
+
+  qbittorrent? ( net-p2p/qbittorrent )
+
+  signal ( net-im/signal-desktop-bin )
+
+  sweeper? ( kde-apps/sweeper )
 	
   video? ( app-production/video )
-  
-	www-apps/webapp-manager
+
+  virt-manager? ( app-emulation/virt-manager )
+
+  webapp? ( www-apps/webapp-manager )
 	
   weather? ( gnome-extra/gnome-weather )
 "
@@ -86,4 +105,3 @@ pkg_postinst() {
 	elog "There is no support whatsoever, but if you find a bug, please file an issue."
 	elog
 }
-
