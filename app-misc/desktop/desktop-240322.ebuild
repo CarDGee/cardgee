@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="appimage calendar contacts games graphics epiphany gnome k3b kde keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
+IUSE="appimage calendar contacts games graphics epiphany gnome k3b kde kdeconnect keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
 
 RDEPEND="
   appimage? ( app-misc/appimagelauncher-bin )
@@ -58,6 +58,8 @@ RDEPEND="
 	kde-apps/konsole
 	kde-apps/kwrite
 	)
+
+  kdeconnect? ( kde-misc/kdeconnect )
 
   keepassxc? ( app-admin/keepassxc )
 
