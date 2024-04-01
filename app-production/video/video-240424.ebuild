@@ -15,7 +15,8 @@ IUSE="blender kdenlive obs openshot shotcut vidcutter"
 RDEPEND="
   blender? ( media-gfx/blender )
   kdenlive? ( kde-apps/kdenlive )
-  obs? ( media-video/obs-studio )
+  obs? ( media-video/obs-studio
+		media-video/obs-streamfx )
   openshot? ( media-video/openshot ) 
   shotcut? ( media-video/shotcut )
   vidcutter? ( media-video/vidcutter )	
