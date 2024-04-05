@@ -10,10 +10,11 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="blender kdenlive obs openshot shotcut vidcutter"
+IUSE="blender handbrake kdenlive obs openshot shotcut vidcutter"
 
 RDEPEND="
   blender? ( media-gfx/blender )
+  handbrake? ( media-video/handbrake )
   kdenlive? ( kde-apps/kdenlive )
   obs? ( media-video/obs-studio
 		media-video/obs-streamfx )
