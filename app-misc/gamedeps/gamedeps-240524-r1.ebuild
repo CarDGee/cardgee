@@ -21,6 +21,7 @@ RDEPEND="
 	games-util/gamemode
   lutris? ( games-util/lutris )
   mangohud? ( games-util/mangohud )
+	games-util/sc-controller
 	games-util/steam-launcher
 	games-util/steamtinkerlaunch
   gamescope? ( gui-wm/gamescope )
