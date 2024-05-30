@@ -21,7 +21,7 @@ RDEPEND="
 	games-util/gamemode
   lutris? ( games-util/lutris )
   mangohud? ( games-util/mangohud )
-	games-util/steam-meta
+	games-util/steam-launcher
 	games-util/steamtinkerlaunch
   gamescope? ( gui-wm/gamescope )
 	media-libs/glew
