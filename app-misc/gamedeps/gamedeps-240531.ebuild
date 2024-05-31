@@ -26,7 +26,7 @@ RDEPEND="
 	games-util/steamtinkerlaunch
   gamescope? ( gui-wm/gamescope )
 	media-libs/glew
-  vkbasalt? ( media-libs/vkBasalt )
+  vkbasalt? ( media-gfx/vkBasalt )
   wine? ( app-emulation/wine-staging )
 "
 
