@@ -54,7 +54,6 @@ RDEPEND="
   kcdemu? ( app-cdr/kcdemu )
 
   kde? ( kde-plasma/plasma-meta
-	app-cdr/kcdemu
 	kde-apps/ark
 	kde-apps/dolphin
 	kde-apps/kcalc
