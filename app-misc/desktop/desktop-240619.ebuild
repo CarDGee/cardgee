@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="appimage calendar contacts games graphics epiphany gnome k3b kcdemu kde kdeconnect keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
+IUSE="appimage calendar contacts games graphics epiphany gnome hyprland k3b kcdemu kde kdeconnect keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
 
 RDEPEND="
   appimage? ( app-misc/appimagelauncher-bin )
@@ -48,6 +48,29 @@ RDEPEND="
   	)
   	
   graphics? ( app-production/graphics )
+  
+  hyprland? ( app-arch/file-roller
+	app-editors/gedit
+	app-misc/base
+	app-misc/brightnessctl
+	dev-python/nautilus-python
+	gnome-base/dconf-editor
+	gnome-base/nautilus
+	gnome-extra/polkit-gnome
+	gui-apps/hypridle
+	gui-apps/mako
+	gui-apps/rofi-wayland
+	gui-apps/swaybg
+	gui-apps/waybar
+	gui-libs/xdg-desktop-portal-hyprland
+	gui-wm/hyprland
+	media-fonts/joypixels
+	media-fonts/twemoji-color-font
+	media-sound/pavucontrol
+	sys-process/htop
+	x11-libs/libnotify
+	x11-terms/alacritty
+	)
 
   k3b? ( kde-apps/k3b )
 

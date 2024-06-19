@@ -16,6 +16,7 @@ RDEPEND="
 	app-admin/doas
 	app-arch/lzip
 	app-arch/unrar
+	app-crypt/mit-krb5
 	app-misc/c-lolcat
 	app-portage/eix
 	app-portage/gentoolkit
