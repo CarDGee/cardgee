@@ -65,7 +65,6 @@ RDEPEND="
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	media-fonts/joypixels
-	media-fonts/twemoji-color-font
 	media-sound/pavucontrol
 	sys-process/htop
 	x11-libs/libnotify
