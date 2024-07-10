@@ -10,9 +10,12 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="appimage calendar contacts games graphics epiphany gnome hyprland k3b kcdemu kde kdeconnect keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
+IUSE="alacritty appimage calendar contacts games graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc ktorrent maps mpv music nautilus nemo nerd qbittorrent signal sweeper video virt-manager weather webapp"
 
 RDEPEND="
+
+  alacritty? ( x11-terms/alacritty )
+  
   appimage? ( app-misc/appimagelauncher-bin )
 
   app-misc/base
@@ -44,8 +47,9 @@ RDEPEND="
   	media-gfx/shotwell
   	sys-apps/gnome-disk-utility
   	x11-wm/mutter
-  	x11-terms/gnome-terminal
   	)
+  	
+  gnome-terminal? ( x11-terms/gnome-terminal )
   	
   graphics? ( app-production/graphics )
   
@@ -53,9 +57,7 @@ RDEPEND="
 	app-editors/gedit
 	app-misc/base
 	app-misc/brightnessctl
-	dev-python/nautilus-python
 	gnome-base/dconf-editor
-	gnome-base/nautilus
 	gnome-extra/polkit-gnome
 	gui-apps/hypridle
 	gui-apps/mako
@@ -70,7 +72,6 @@ RDEPEND="
 	sys-process/htop
 	x11-libs/libnotify
 	x11-misc/xdg-user-dirs
-	x11-terms/alacritty
 	)
 
   k3b? ( kde-apps/k3b )
