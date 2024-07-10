@@ -38,7 +38,6 @@ RDEPEND="
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
   	gnome-base/dconf-editor
-  	gnome-extra/gdm-settings
   	gnome-extra/gnome-firmware
   	gnome-extra/gnome-tweaks
   	gnome-extra/polkit-gnome
