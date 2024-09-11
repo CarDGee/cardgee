@@ -10,21 +10,15 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="android vim"
 
 RDEPEND="
 	app-admin/doas
 	app-arch/lzip
 	app-arch/unrar
 	app-crypt/mit-krb5
-	app-misc/c-lolcat
 	app-portage/eix
 	app-portage/gentoolkit
-	app-shells/ohmyzsh
 	dev-vcs/git
-android? ( dev-util/android-tools )
-	net-firewall/ufw
-	sys-apps/plocate
 	sys-apps/usbutils
 	sys-devel/bc
 	sys-devel/lld
@@ -39,7 +33,6 @@ android? ( dev-util/android-tools )
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
 	sys-process/schedtool
-vim? ( app-editors/vim )
 "
 
 pkg_postinst() {
