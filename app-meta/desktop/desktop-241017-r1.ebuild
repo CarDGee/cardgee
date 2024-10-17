@@ -18,7 +18,7 @@ RDEPEND="
   
   appimage? ( app-misc/appimagelauncher-bin )
 
-	app-misc/base
+	app-meta/base
 	
   calendar? ( gnome-extra/gnome-calendar )
   
@@ -28,7 +28,7 @@ RDEPEND="
 
   epiphany? ( www-client/epiphany )
   
-  games? ( app-misc/gamedeps )
+  games? ( app-meta/gamedeps )
 	
   gnome? ( app-editors/gedit 
   	dev-libs/gjs
@@ -53,7 +53,7 @@ RDEPEND="
   	
   gnome-terminal? ( x11-terms/gnome-terminal )
   	
-  graphics? ( app-production/graphics )
+  graphics? ( app-meta/graphics )
   
   hyprland? ( app-arch/file-roller
 	app-editors/gedit
@@ -98,7 +98,7 @@ RDEPEND="
 
   mpv? ( media-video/mpv )
   
-  music? ( app-production/music )
+  music? ( app-meta/music )
   	
   nautilus? ( app-arch/file-roller
   	dev-python/nautilus-python )
@@ -113,7 +113,7 @@ RDEPEND="
 
   sweeper? ( kde-apps/sweeper )
 	
-  video? ( app-production/video )
+  video? ( app-meta/video )
 
   virt-manager? ( app-emulation/virt-manager )
 
