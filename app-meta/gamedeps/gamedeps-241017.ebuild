@@ -10,24 +10,39 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dxvk epic gamescope lutris mangohud vkbasalt vkd3d wine"
+IUSE="cemu dxvk epic gamescope lutris mangohud suyu vkbasalt vkd3d wine"
 
 RDEPEND="
-  vkd3d? ( app-emulation/vkd3d )
+  cemu? ( app-emulation/cemu )
+  
   dxvk? ( app-emulation/dxvk )
+  
   	dev-util/vulkan-tools
+  	
   epic? ( games-util/heroic-bin )
+  
 	games-util/esteam
 	games-util/gamemode
+	
+  gamescope? ( gui-wm/gamescope )
+  
   lutris? ( games-util/lutris )
+  
   mangohud? ( games-util/mangohud )
+  
 	games-util/sc-controller
 	games-util/steam-launcher
 	games-util/steamtinkerlaunch
-  gamescope? ( gui-wm/gamescope )
 	media-libs/glew
+	
+  suyu? ( app-emulation/suyu )
+  
   vkbasalt? ( media-gfx/vkBasalt )
+  
+  vkd3d? ( app-emulation/vkd3d )
+  
   wine? ( app-emulation/wine-staging )
+  
 "
 
 pkg_postinst() {

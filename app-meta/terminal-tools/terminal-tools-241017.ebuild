@@ -10,21 +10,25 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="android ufw vim zsh"
+IUSE="android ftp ufw vim yt-dlp zsh"
 
 RDEPEND="
 
-android? ( dev-util/android-tools )
+  android? ( dev-util/android-tools )
 	app-misc/c-lolcat
 	app-misc/fastfetch
 	sys-apps/plocate
 	sys-apps/zram-generator
 	
-ufw? ( net-firewall/ufw )
+  ftp? ( net-ftp/vsftpd )
+  	
+  ufw? ( net-firewall/ufw )
 
-vim? ( app-editors/vim )
+  vim? ( app-editors/vim )
 
-zsh? ( app-shells/ohmyzsh 
+  yt-dlp? ( net-misc/yt-dlp )
+  
+  zsh? ( app-shells/ohmyzsh 
 	app-shells/zsh-autocomplete
 	app-shells/zsh-autosuggestions
 	app-shells/zsh-history-substring-search

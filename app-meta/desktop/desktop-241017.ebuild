@@ -18,11 +18,13 @@ RDEPEND="
   
   appimage? ( app-misc/appimagelauncher-bin )
 
-  app-misc/base
+	app-misc/base
 	
   calendar? ( gnome-extra/gnome-calendar )
   
   contacts? ( gnome-extra/gnome-contacts )
+  
+	dev-libs/libthai
 
   epiphany? ( www-client/epiphany )
   
@@ -104,8 +106,6 @@ RDEPEND="
   nemo? ( gnome-extra/nemo-fileroller )
   	
   nerd? ( media-fonts/nerd-fonts )
-
-	net-misc/yt-dlp
 
   qbittorrent? ( net-p2p/qbittorrent )
 
