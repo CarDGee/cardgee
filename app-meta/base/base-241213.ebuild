@@ -19,9 +19,9 @@ RDEPEND="
 	app-portage/eix
 	app-portage/gentoolkit
 	dev-vcs/git
+	llvm-core/lld
 	sys-apps/usbutils
 	sys-devel/bc
-	sys-devel/lld
 	sys-devel/mold
 	sys-fs/dislocker
 	sys-fs/dosfstools
