@@ -4,21 +4,29 @@
 
 EAPI=8
 
-DESCRIPTION="Meta package providing my selection of applications for my linux desktop"
+DESCRIPTION="Meta package providing my choice of applications for a basic GNU/linux OS (Gentoo BTW)"
 HOMEPAGE="https://github.com/CarDGee/cardgee"
 
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
+IUSE="doas installkernel genkernel xfs"
 
 RDEPEND="
-	app-admin/doas
 	app-arch/lzip
 	app-arch/unrar
 	app-crypt/mit-krb5
 	app-portage/eix
 	app-portage/gentoolkit
+	
+  doas? ( app-admin/doas )
+  
 	dev-vcs/git
+	
+  genkernel? ( sys-kernel/genkernel )
+  
+  installkernel? ( sys-kernel/installkernel )
+	
 	llvm-core/lld
 	sys-apps/usbutils
 	sys-devel/bc
@@ -28,11 +36,10 @@ RDEPEND="
 	sys-fs/exfatprogs
 	sys-fs/f2fs-tools
 	sys-fs/ntfs3g
-	sys-fs/xfsprogs
-	sys-kernel/genkernel
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
 	sys-process/schedtool
+  xfs? ( sys-fs/xfsprogs )
 "
 
 pkg_postinst() {

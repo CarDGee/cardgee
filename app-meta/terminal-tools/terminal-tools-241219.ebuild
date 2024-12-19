@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="android ftp ufw vim yt-dlp zsh"
+IUSE="android ftp ufw vim weechat wgetpaste yt-dlp zsh"
 
 RDEPEND="
 
@@ -23,6 +23,10 @@ RDEPEND="
   ftp? ( net-ftp/vsftpd )
   	
   ufw? ( net-firewall/ufw )
+  
+  weechat? ( net-irc/weechat )
+  
+  wgetpaste? ( app-text/wgetpaste )
 
   vim? ( app-editors/vim )
 
