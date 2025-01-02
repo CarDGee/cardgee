@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Foundation
+# Copyright 1999-2025 Gentoo Foundation
 
 # CarDGee Overlay
 
