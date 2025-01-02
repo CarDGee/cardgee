@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="cemu dxvk epic gamescope lutris mangohud suyu vkbasalt vkd3d wine"
+IUSE="cemu dxvk epic gamescope glew lutris mangohud sc-controller steamtinkerlaunch suyu vkbasalt vkd3d wine"
 
 RDEPEND="
   cemu? ( app-emulation/cemu )
@@ -26,14 +26,17 @@ RDEPEND="
 	
   gamescope? ( gui-wm/gamescope )
   
+  glew? ( media-libs/glew )
+  
   lutris? ( games-util/lutris )
   
   mangohud? ( games-util/mangohud )
   
-	games-util/sc-controller
 	games-util/steam-launcher
-	games-util/steamtinkerlaunch
-	media-libs/glew
+	
+  sc-controller? ( games-util/sc-controller )
+	
+  steamtinkerlaunch? ( games-util/steamtinkerlaunch )
 	
   suyu? ( app-emulation/suyu )
   
