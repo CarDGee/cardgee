@@ -14,7 +14,7 @@ IUSE="bottles cemu dxvk epic gamescope glew lutris mangohud sc-controller steamt
 
 RDEPEND="
   
-  bottles? ( app-emulation/bottle )
+  bottles? ( app-emulation/bottles )
 
   cemu? ( app-emulation/cemu )
   
