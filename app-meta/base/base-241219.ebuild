@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="doas installkernel genkernel xfs"
+IUSE="doas f2fs genkernel installkernel lld xfs"
 
 RDEPEND="
 	app-arch/lzip
@@ -23,18 +23,20 @@ RDEPEND="
   
 	dev-vcs/git
 	
+  f2fs? ( sys-fs/f2fs-tools )
+	
   genkernel? ( sys-kernel/genkernel )
   
   installkernel? ( sys-kernel/installkernel )
 	
-	llvm-core/lld
+  lld? ( llvm-core/lld )
+  
 	sys-apps/usbutils
 	sys-devel/bc
 	sys-devel/mold
 	sys-fs/dislocker
 	sys-fs/dosfstools
 	sys-fs/exfatprogs
-	sys-fs/f2fs-tools
 	sys-fs/ntfs3g
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
