@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="doas f2fs genkernel installkernel lld xfs"
+IUSE="dislocker doas f2fs genkernel installkernel lld xfs"
 
 RDEPEND="
 	app-arch/lzip
@@ -18,6 +18,8 @@ RDEPEND="
 	app-crypt/mit-krb5
 	app-portage/eix
 	app-portage/gentoolkit
+	
+  dislocker? ( sys-fs/dislocker )
 	
   doas? ( app-admin/doas )
   
@@ -34,7 +36,6 @@ RDEPEND="
 	sys-apps/usbutils
 	sys-devel/bc
 	sys-devel/mold
-	sys-fs/dislocker
 	sys-fs/dosfstools
 	sys-fs/exfatprogs
 	sys-fs/ntfs3g
