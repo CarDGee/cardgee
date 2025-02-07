@@ -55,24 +55,16 @@ RDEPEND="
   	
   graphics? ( app-meta/graphics )
   
-  hyprland? ( app-arch/file-roller
-	app-editors/gedit
-	app-misc/base
-	app-misc/brightnessctl
-	gnome-base/dconf-editor
-	gnome-extra/polkit-gnome
+  hyprland? ( app-misc/brightnessctl
 	gui-apps/hypridle
-	gui-apps/mako
-	gui-apps/rofi-wayland
 	gui-apps/swaybg
 	gui-apps/waybar
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	media-fonts/joypixels
 	media-fonts/twemoji-color-font
-	media-sound/pavucontrol
-	sys-process/htop
-	x11-libs/libnotify
+	sys-process/bottom
+	x11-misc/dunst 
 	x11-misc/xdg-user-dirs
 	)
 
