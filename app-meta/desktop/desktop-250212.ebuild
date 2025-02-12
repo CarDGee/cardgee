@@ -30,13 +30,15 @@ RDEPEND="
   
   games? ( app-meta/gamedeps )
 	
-  gnome? ( app-editors/gedit 
+  gnome? ( app-arch/file-roller
+  	app-editors/gedit 
   	dev-libs/gjs
   	gnome-base/gnome-core-libs
   	gnome-base/gnome-session
   	gnome-base/gnome-settings-daemon
   	gnome-base/gnome-control-center
   	gnome-base/gnome-shell
+  	gnome-base/nautilus
   	gnome-extra/gnome-browser-connector
   	gnome-extra/gnome-calculator
   	gnome-extra/gnome-firmware
