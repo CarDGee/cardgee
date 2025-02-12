@@ -95,7 +95,9 @@ RDEPEND="
   	mate-extra/mate-polkit 
   	)
 
-  mpv? ( media-video/mpv )
+  mpv? ( media-video/mpv
+  	mpv-plugin/mpv-mpris
+	)
   
   music? ( app-meta/music )
   	
