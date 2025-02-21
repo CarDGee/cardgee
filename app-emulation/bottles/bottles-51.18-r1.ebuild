@@ -72,10 +72,11 @@ BDEPEND="
 	)
 "
 
-PATCHES=(
-	"${FILESDIR}/${PV}/disable-flatpak-check.patch"
-	"${FILESDIR}/${PV}/allow-non-flatpak.patch"
-)
+src_prepare() {
+  default
+  sed -i 's/if not fs.is_file.*$/if false/' bottles/frontend/meson.build
+  sed -i '/if not Xdp.Portal.running_under_sandbox()/,/^            return$/s/^/#/' bottles/frontend/window.py
+}
 
 EPYTEST_DESELECT=(
 	"bottles/tests/backend/state/test_events.py::test_set_reset"
