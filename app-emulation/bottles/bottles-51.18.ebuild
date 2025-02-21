@@ -73,8 +73,8 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/disable-flatpak-check.patch"
-	"${FILESDIR}/allow-non-flatpak.patch"
+	"${FILESDIR}/${PV}/disable-flatpak-check.patch"
+	"${FILESDIR}/${PV}/allow-non-flatpak.patch"
 )
 
 EPYTEST_DESELECT=(
