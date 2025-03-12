@@ -31,6 +31,7 @@ DEPEND="
     media-libs/alsa-lib
     media-libs/fontconfig
     media-libs/freetype
+    net-print/cups
     x11-libs/gtk+:3
     x11-libs/libnotify
 "
