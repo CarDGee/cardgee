@@ -44,6 +44,7 @@ RDEPEND="
   	gnome-extra/polkit-gnome
   	mail-client/evolution
   	media-fonts/cantarell
+  	media-fonts/ubuntu-font-family
   	media-gfx/shotwell
   	media-gfx/simple-scan
   	sys-apps/gnome-disk-utility
