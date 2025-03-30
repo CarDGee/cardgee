@@ -96,6 +96,7 @@ RDEPEND="
   	mate-extra/mate-polkit 
   	)
 
+	media-fonts/noto-emoji
 	media-fonts/ubuntu-font-family
 
   mpv? ( media-video/mpv
