@@ -96,6 +96,8 @@ RDEPEND="
   	mate-extra/mate-polkit 
   	)
 
+	media-fonts/ubuntu-font-family
+
   mpv? ( media-video/mpv
   	mpv-plugin/mpv-mpris
 	)
@@ -115,7 +117,9 @@ RDEPEND="
   
   qtile? ( x11-wm/qtile
   	dev-python/psutil
+	media-sound/pwvucontrol
   	x11-libs/libnotify
+	x11-misc/dunst
 	x11-misc/xdg-user-dirs )
 
   signal? ( net-im/signal-desktop-bin )
