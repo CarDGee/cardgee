@@ -43,8 +43,6 @@ RDEPEND="
   	gnome-extra/gnome-tweaks
   	gnome-extra/polkit-gnome
   	mail-client/evolution
-  	media-fonts/cantarell
-  	media-fonts/ubuntu-font-family
   	media-gfx/shotwell
   	media-gfx/simple-scan
   	sys-apps/gnome-disk-utility
@@ -55,14 +53,10 @@ RDEPEND="
   	
   graphics? ( app-meta/graphics )
   
-  hyprland? ( app-misc/brightnessctl
-	gui-apps/hypridle
-	gui-apps/swaybg
-	gui-apps/waybar
+  hyprland? ( gui-apps/swaybg
 	gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
-	media-fonts/joypixels
-	media-fonts/twemoji-color-font
+	sys-auth/hyprpolkitagent
 	sys-process/bottom
 	x11-misc/dunst 
 	x11-misc/xdg-user-dirs
@@ -92,8 +86,7 @@ RDEPEND="
   
   mate-apps? ( mate-extra/caja-extensions 
   	app-arch/engrampa 
-  	app-editors/pluma 
-  	mate-extra/mate-polkit 
+  	app-editors/pluma  
   	)
 
 	media-fonts/noto-emoji
@@ -118,7 +111,6 @@ RDEPEND="
   
   qtile? ( x11-wm/qtile
   	dev-python/psutil
-	media-sound/pwvucontrol
   	x11-libs/libnotify
 	x11-misc/dunst
 	x11-misc/xdg-user-dirs )
