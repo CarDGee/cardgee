@@ -8,9 +8,10 @@ EAPI=8
 BRAVE_PN="${PN/-bin/}"
 
 CHROMIUM_LANGS="
-	af am ar bg bn ca cs da de el en-GB en-US es es-419 et fa fi fil fr gu he 
-	hi hr hu id it ja kn ko lt lv ml mr ms nb nl pl pt-BR pt-PT ro ru sk sl sr 
-	sv sw ta te th tr uk ur vi zh-CN zh-TW
+	af am ar az bg bn ca cs da de el en-GB en-US es es-419 et fa fi fil fr 
+	gu he hi hr hu id it ja ka km kn ko lt lv mk ml mn mr ms my nb nl pl 
+	pt-BR pt-PT ro ru si sk sl sq sr sr-latin sv sw ta te th tr uk ur uz vi 
+	zh-CN zh-TW
 "
 
 inherit chromium-2 xdg-utils desktop
@@ -35,7 +36,6 @@ DEPEND="
     x11-libs/gtk+:3
     x11-libs/libnotify
 "
-RDEPEND="${DEPEND}"
 
 QA_PREBUILT="*"
 
@@ -58,6 +58,8 @@ src_install() (
 
 		insinto ${BRAVE_HOME}
 			doins -r *
+    # Brave has a bug in 1.27.105 where it needs crashpad_handler chmodded
+    # Delete crashpad_handler when https://github.com/brave/brave-browser/issues/16985 is resolved.
 			exeinto ${BRAVE_HOME}
 				doexe brave chrome_crashpad_handler
 
@@ -86,3 +88,4 @@ pkg_postrm() {
 	xdg_desktop_database_update
 	xdg_mimeinfo_database_update
 }
+
