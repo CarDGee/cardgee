@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="ardour audacity carla easyeffects flacon hydrogen lmms mixxx shntool tenacity"
+IUSE="ardour audacity carla easyeffects flacon hydrogen lmms mixxx qtractor shntool tenacity"
 
 REQUIRED_USE="
   audacity? ( !tenacity )
@@ -33,6 +33,8 @@ RDEPEND="
   lmms? ( media-sound/lmms )
   
   mixxx? ( media-sound/mixxx )
+
+  qtractor? ( media-sound/qtractor )
   
   shntool? ( media-sound/shntool )
   
