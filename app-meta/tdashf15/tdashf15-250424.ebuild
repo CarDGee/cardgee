@@ -10,13 +10,13 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="asusctl"
 
 RDEPEND="
 	app-crypt/sbctl
 	media-libs/libva-intel-media-driver
 	sys-firmware/intel-microcode
-	sys-power/asusctl
+  asusctl? ( sys-power/asusctl )
 "
 
 pkg_postinst() {

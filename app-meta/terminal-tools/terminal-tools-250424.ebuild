@@ -18,7 +18,6 @@ RDEPEND="
 	app-misc/c-lolcat
 	app-misc/fastfetch
 	sys-apps/plocate
-	sys-apps/zram-generator
 	
   ftp? ( net-ftp/vsftpd )
   	
