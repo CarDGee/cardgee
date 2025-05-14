@@ -10,11 +10,13 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="blender gimp inkscape krita pencil synfig"
+IUSE="blender geeqie gimp inkscape krita pencil synfig"
 
 RDEPEND="
 
   blender? ( media-gfx/blender )
+
+  geeqie? ( media-gfx/geeqie )
   
   gimp? ( media-gfx/gimp )
   
