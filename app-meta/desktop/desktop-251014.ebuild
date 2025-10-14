@@ -74,6 +74,7 @@ RDEPEND="
 	kde-apps/kcalc
 	kde-apps/konsole
 	kde-apps/kwrite
+	kde-apps/okular
 	)
 
   kdeconnect? ( kde-misc/kdeconnect )
