@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alacritty appimage calendar cava contacts games graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine qbittorrent qtile signal sweeper video virt-manager waybar weather webapp winboat"
+IUSE="alacritty appimage calendar cava contacts games graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine qbittorrent qtile signal sweeper video virt-manager waybar weather webapp winboat"
 
 RDEPEND="
 
@@ -80,6 +80,8 @@ RDEPEND="
 
   keepassxc? ( app-admin/keepassxc )
   
+  kid3? ( media-sound/kid3 )
+
   kitty? ( x11-terms/kitty )
 
   ktorrent? ( net-p2p/ktorrent )
