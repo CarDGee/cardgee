@@ -32,7 +32,8 @@ RDEPEND="
   
   games? ( app-meta/gamedeps )
 	
-  gnome? ( app-editors/gedit 
+  gnome? ( app-editors/gnome-text-editor
+  	app-text/papers
   	dev-libs/gjs
   	gnome-base/gnome-core-libs
   	gnome-base/gnome-session

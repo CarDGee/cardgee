@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dislocker doas f2fs genkernel installkernel lld openrc systemd xfs"
+IUSE="dislocker doas f2fs genkernel installkernel lld openrc phn1673 systemd xfs"
 
 RDEPEND="
 	app-arch/lzip
@@ -34,6 +34,9 @@ RDEPEND="
   lld? ( llvm-core/lld )
 
   openrc? ( sys-block/zram-init )
+  
+  phn1673? ( sys-firmware/intel-microcode
+  	sys-firmware/sof-firmware )
 
   systemd? ( sys-apps/zram-generator )
   
