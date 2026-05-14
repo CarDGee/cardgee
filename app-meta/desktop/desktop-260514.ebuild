@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alacritty appimage calendar cava contacts games graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine qbittorrent qtile signal sweeper video virt-manager waybar weather webapp winboat"
+IUSE="alacritty appimage bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
 
 RDEPEND="
 
@@ -19,18 +19,24 @@ RDEPEND="
   appimage? ( app-misc/appimagelauncher-bin )
 
 	app-meta/base
-	
+		
+  bottom? ( sys-process/bottom )
+  	
   calendar? ( gnome-extra/gnome-calendar )
 
   cava? ( media-sound/cava )
   
   contacts? ( gnome-extra/gnome-contacts )
   
+  deluge? ( net-p2p/deluge )
+  
 	dev-libs/libthai
 
   epiphany? ( www-client/epiphany )
   
   games? ( app-meta/gamedeps )
+  
+  geany? ( dev-util/geany )
 	
   gnome? ( app-editors/gnome-text-editor
   	app-text/papers
@@ -107,7 +113,7 @@ RDEPEND="
   music? ( app-meta/music )
   	
   nautilus? ( app-arch/file-roller
-  	gnome-base/nautilus )
+  	dev-python/nautilus-python )
   	
   nemo? ( gnome-extra/nemo-fileroller )
   	
@@ -116,11 +122,15 @@ RDEPEND="
   networkmanager? ( net-misc/networkmanager )
   
   nicotine? ( net-p2p/nicotine+ )
+  
+  papers? ( app-text/papers ) 
 
   qbittorrent? ( net-p2p/qbittorrent )
   
   qtile? ( x11-wm/qtile
   	dev-python/psutil
+  	gui-apps/wlr-randr
+  	gui-libs/xdg-desktop-portal-wlr
   	x11-libs/libnotify
 	x11-misc/dunst
 	x11-misc/xdg-user-dirs )
@@ -128,6 +138,8 @@ RDEPEND="
   signal? ( net-im/signal-desktop-bin )
 
   sweeper? ( kde-apps/sweeper )
+  
+  syncthing? ( net-p2p/syncthing )
 	
   video? ( app-meta/video )
 
