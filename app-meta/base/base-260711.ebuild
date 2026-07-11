@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dislocker doas f2fs genkernel installkernel lld openrc phn1673 systemd xfs"
+IUSE="dislocker doas f2fs genkernel installkernel lld ntfs openrc phn1673 systemd xfs"
 
 RDEPEND="
 	app-arch/lzip
@@ -32,6 +32,8 @@ RDEPEND="
   installkernel? ( sys-kernel/installkernel )
 	
   lld? ( llvm-core/lld )
+  
+  ntfs? ( sys-fs/ntfs3g )
 
   openrc? ( sys-block/zram-init )
   
@@ -45,7 +47,6 @@ RDEPEND="
 	sys-devel/mold
 	sys-fs/dosfstools
 	sys-fs/exfatprogs
-	sys-fs/ntfs3g
 	sys-kernel/linux-firmware
 	sys-kernel/modprobed-db
 	sys-process/schedtool

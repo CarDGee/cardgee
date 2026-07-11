@@ -62,12 +62,9 @@ RDEPEND="
   	
   graphics? ( app-meta/graphics )
   
-  hyprland? ( gui-apps/swaybg
-	gui-libs/xdg-desktop-portal-hyprland
+  hyprland? ( gui-libs/xdg-desktop-portal-hyprland
 	gui-wm/hyprland
 	sys-auth/hyprpolkitagent
-	sys-process/bottom
-	x11-misc/dunst 
 	x11-misc/xdg-user-dirs
 	)
 
