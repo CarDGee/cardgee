@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alacritty appimage bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
+IUSE="alacritty appimage bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal gnome-text-editor hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
 
 RDEPEND="
 
@@ -59,6 +59,8 @@ RDEPEND="
   	)
   	
   gnome-terminal? ( x11-terms/gnome-terminal )
+  
+  gnome-text-editor? ( app-editors/gnome-text-editor )
   	
   graphics? ( app-meta/graphics )
   
@@ -110,7 +112,8 @@ RDEPEND="
   music? ( app-meta/music )
   	
   nautilus? ( app-arch/file-roller
-  	dev-python/nautilus-python )
+  	dev-python/nautilus-python
+  	gui-libs/xdg-desktop-portal-gtk )
   	
   nemo? ( gnome-extra/nemo-fileroller )
   	

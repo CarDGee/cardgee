@@ -32,9 +32,7 @@ RDEPEND="
   yt-dlp? ( net-misc/yt-dlp )
   
   zsh? ( app-shells/ohmyzsh 
-	app-shells/zsh-autocomplete
 	app-shells/zsh-autosuggestions
-	app-shells/zsh-history-substring-search
 	app-shells/zsh-syntax-highlighting	
 	)
 "
