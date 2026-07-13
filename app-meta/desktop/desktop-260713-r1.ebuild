@@ -97,8 +97,8 @@ RDEPEND="
   
   mate-apps? ( mate-extra/caja-extensions 
   	app-arch/engrampa 
-  	app-editors/pluma  
-  	)
+  	app-editors/pluma
+  	sys-apps/xdg-desktop-portal-gtk )
 
 	media-fonts/noto-emoji
 	media-fonts/ubuntu-font-family
@@ -113,7 +113,7 @@ RDEPEND="
   	
   nautilus? ( app-arch/file-roller
   	dev-python/nautilus-python
-  	gui-libs/xdg-desktop-portal-gtk )
+  	sys-apps/xdg-desktop-portal-gtk )
   	
   nemo? ( gnome-extra/nemo-fileroller )
   	
