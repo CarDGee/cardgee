@@ -1,6 +1,8 @@
 # Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# CarDGee Overlay
+
 EAPI=8
 
 PYPI_NO_NORMALIZE=y
@@ -20,3 +22,18 @@ KEYWORDS="amd64"
 RESTRICT="test"
 
 RDEPEND="dev-python/orjson[${PYTHON_USEDEP}]"
+
+pkg_postinst() {
+	elog
+	elog "=========================================================="
+	elog "  CarDGee Overlay - ${PN}"
+	elog "=========================================================="
+	elog
+	elog "This is a CarDGee overlay ebuild — a collection of ebuilds"
+	elog "for my own personal use, not available on the main portage"
+	elog "tree."
+	elog
+	elog "!! There is no support whatsoever, but if you find a bug,"
+	elog "   please file an issue: https://github.com/CarDGee/cardgee/issues"
+	elog
+}

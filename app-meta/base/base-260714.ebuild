@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="dislocker doas f2fs genkernel installkernel lld ntfs openrc phn1673 systemd xfs"
+IUSE="dislocker doas f2fs genkernel installkernel lld modprobed ntfs openrc phn1673 systemd xfs"
 
 RDEPEND="
 	app-arch/lzip
@@ -33,6 +33,8 @@ RDEPEND="
 	
   lld? ( llvm-core/lld )
   
+  modprobed? ( sys-kernel/modprobed-db )
+  
   ntfs? ( sys-fs/ntfs3g )
 
   openrc? ( sys-block/zram-init )
@@ -48,18 +50,21 @@ RDEPEND="
 	sys-fs/dosfstools
 	sys-fs/exfatprogs
 	sys-kernel/linux-firmware
-	sys-kernel/modprobed-db
 	sys-process/schedtool
   xfs? ( sys-fs/xfsprogs )
 "
 
 pkg_postinst() {
 	elog
-	elog "This is a cardgee overlay ebuild"
-	elog "A collection of ebuilds for my own personal use not available on portage tree."
-	elog "There is no support whatsoever, but if you find a bug, please file an issue."
+	elog "=========================================================="
+	elog "  CarDGee Overlay - ${PN}"
+	elog "=========================================================="
 	elog
-	elog "You have installed a personal meta package"
-	elog "It may include applications which you don't need or like"
+	elog "This is a CarDGee overlay ebuild — a collection of ebuilds"
+	elog "for my own personal use, not available on the main portage"
+	elog "tree."
+	elog
+	elog "!! There is no support whatsoever, but if you find a bug,"
+	elog "   please file an issue: https://github.com/CarDGee/cardgee/issues"
 	elog
 }

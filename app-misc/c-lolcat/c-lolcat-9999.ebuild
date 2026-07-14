@@ -33,8 +33,15 @@ src_install() {
 
 pkg_postinst() {
 	elog
-	elog "This is a cardgee overlay ebuild"
-	elog "A collection of ebuilds for my own personal use not available on portage tree."
-	elog "There is no support whatsoever, but if you find a bug, please file an issue."
+	elog "=========================================================="
+	elog "  CarDGee Overlay - ${PN}"
+	elog "=========================================================="
+	elog
+	elog "This is a CarDGee overlay ebuild — a collection of ebuilds"
+	elog "for my own personal use, not available on the main portage"
+	elog "tree."
+	elog
+	elog "!! There is no support whatsoever, but if you find a bug,"
+	elog "   please file an issue: https://github.com/CarDGee/cardgee/issues"
 	elog
 }

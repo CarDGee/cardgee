@@ -1,4 +1,4 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # CarDGee Overlay
@@ -129,5 +129,16 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "Installed from the CarDGee overlay."
+	elog
+	elog "=========================================================="
+	elog "  CarDGee Overlay - ${PN}"
+	elog "=========================================================="
+	elog
+	elog "This is a CarDGee overlay ebuild — a collection of ebuilds"
+	elog "for my own personal use, not available on the main portage"
+	elog "tree."
+	elog
+	elog "!! There is no support whatsoever, but if you find a bug,"
+	elog "   please file an issue: https://github.com/CarDGee/cardgee/issues"
+	elog
 }
