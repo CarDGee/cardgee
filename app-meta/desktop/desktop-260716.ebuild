@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alacritty appimage bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal gnome-text-editor hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
+IUSE="alacritty appimage atril bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal gnome-text-editor hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
 
 RDEPEND="
 
@@ -19,6 +19,8 @@ RDEPEND="
   appimage? ( app-misc/appimagelauncher-bin )
 
 	app-meta/base
+
+  atril? ( app-text/atril )
 		
   bottom? ( sys-process/bottom )
   	
@@ -151,8 +153,7 @@ RDEPEND="
 	
   weather? ( gnome-extra/gnome-weather )
 
-  winboat? ( app-containers/docker
-	app-containers/docker-compose
+  winboat? ( app-emulation/winboat-bin
 	net-misc/freerdp[X] )
 "
 
