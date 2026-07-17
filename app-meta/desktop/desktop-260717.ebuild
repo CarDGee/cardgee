@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/CarDGee/cardgee"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="alacritty appimage atril bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal gnome-text-editor hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
+IUSE="alacritty appimage atril bottom calendar cava contacts deluge games geany graphics epiphany gnome gnome-terminal gnome-text-editor hyprland k3b kcdemu kde kdeconnect keepassxc kid3 kitty ktorrent mate-apps maps mpd mpv music nautilus nemo nerd networkmanager nicotine nvidia ollama papers qbittorrent qtile signal sweeper syncthing video virt-manager waybar weather webapp winboat"
 
 RDEPEND="
 
@@ -124,6 +124,11 @@ RDEPEND="
   networkmanager? ( net-misc/networkmanager )
   
   nicotine? ( net-p2p/nicotine+ )
+
+  ollama? (
+	sci-ml/ollama
+    nvidia? ( dev-util/nvidia-cuda-toolkit )
+	)
   
   papers? ( app-text/papers ) 
 
